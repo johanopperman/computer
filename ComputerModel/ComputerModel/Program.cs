@@ -9,6 +9,7 @@ namespace Computer
         public int CPUCores { get; set; }
         public bool HasWifi { get; set; }
         public bool HasLTE { get; set; }
+        public bool HasMobilePhone { get; set; }
         public DateTime ReleaseDate { get; set; }
         public decimal Price { get; set; }
         public string VideoCard { get; set; }
@@ -32,19 +33,21 @@ namespace Computer
         {
             Computer myComputer = new Computer()
             {
-                Motherboard = "ZMO900",
-                CPUCores = 500,
+                Motherboard = "ZMO9001",
+                CPUCores = 900,
                 HasLTE = false,
                 HasWifi = false,
+                HasMobilePhone = true,
                 ReleaseDate = new DateTime(),
-                Price = 34.99m,
-                VideoCard = "RTX 2000"
+                Price = 104.99m,
+                VideoCard = "RTX 6700"
             };
 
             Console.WriteLine("You have a"+ " " + myComputer.Motherboard + " " + "motherboard on your machine!");
             Console.WriteLine(myComputer.CPUCores);
             Console.WriteLine(myComputer.HasLTE);
             Console.WriteLine(myComputer.HasWifi);
+            Console.WriteLine("You have a mobile phone with status" + " " + myComputer.HasMobilePhone);
             Console.WriteLine(myComputer.ReleaseDate);
             Console.WriteLine(myComputer.Price);
             Console.WriteLine(myComputer.VideoCard);
