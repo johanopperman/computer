@@ -5,26 +5,26 @@ namespace Computer
 {
     public class Computer
     {
-        public string Motherboard { get; set; }
+        public string Motherboard { get; set; } = string.Empty;
         public int CPUCores { get; set; }
         public bool HasWifi { get; set; }
         public bool HasLTE { get; set; }
         public bool HasMobilePhone { get; set; }
         public DateTime ReleaseDate { get; set; }
         public decimal Price { get; set; }
-        public string VideoCard { get; set; }
+        public string VideoCard { get; set; } = string.Empty;
 
-        public Computer()
-        {
-            if (VideoCard == null)
-            {
-                VideoCard = "";
-            }
-            if (Motherboard == null)
-            {
-                Motherboard = "";
-            }
-        }
+    //    public Computer()
+    //    {
+    //        if (VideoCard == null)
+    //        {
+    //            VideoCard = "";
+    //        }
+    //        if (Motherboard == null)
+    //        {
+    //            Motherboard = "";
+    //        }
+    //    }
     }
 
     internal class Program
